@@ -1,1 +1,72 @@
-<h1>testestest</h1>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Battle Z Duels</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<h1 class="main-title">DBZ Duels</h1>
+<div class="game-start">
+    <button onclick="hideStart()" class="player-button one-player">One Player</button>
+    <button onclick="hideStart()" class="player-button"> Two Player</button>
+</div>
+<section class="arena">
+    <div class="hero column">
+        <h2 class="player-title">Player 1</h2>
+        <div class="roster hero-roster">
+            <button onclick="selectHero.call(this)" class="goku" >Goku</button>
+            <button onclick="selectHero.call(this)" class="masterR">Master Roshi</button>
+            <button onclick="selectHero.call(this)" class="piccolo">Piccolo</button>
+            <button onclick="selectHero.call(this)" class="krillin">Krillin</button>
+        </div>
+        <div class="hero-header">
+            <h3 class="hero-title">Hero: Goku</h3>
+            <h3 class="hero-health">Health: 50</h3>
+        </div>
+        <img class="hero-img" src="img/goku.png" alt="">
+        <div class="actionBtns">
+            <button class="hero-attack">Attack</button>
+            <button class="hero-saiyan">Saiyan</button>
+            <div class="healBtn">
+                <button class="hero-heal">Heal</button>
+            </div>
+        </div>
+    </div>
+    <button onclick="startFight()"class="start">Start!</button>
+    <div class="villain column">
+        <h2 class="player-title">Player 2</h2>
+        <nav class="roster vil-roster">
+            <button class="frieza" onclick="selectVil.call(this)">Frieza</button>
+            <button class="kidBu"onclick="selectVil.call(this)">Kid Bu</button>
+            <button class="beerus"onclick="selectVil.call(this)">Beerus</button>
+            <button class="cell"onclick="selectVil.call(this)">Cell</button>
+        </nav>
+        <div class="vil-header">
+                <h3 class="vil-title">Villain: Frieza</h3>
+                <h3 class="vil-health">Health: 50</h3>
+            </div>
+        <img class="vil-img" src="img/frieza.png" alt="">
+        <div class="actionBtns">
+            <button class="vil-attack">Attack</button>
+            <button class="vil-saiyan">Saiyan</button>
+            <div class="healBtn">
+                <button class="vil-heal">Heal</button>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+<div class="play-by-play">
+        <p>Press Start to Begin Battling<br>
+        Check here for updates!
+        </p>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

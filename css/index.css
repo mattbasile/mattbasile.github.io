@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: blue;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: black;
+}
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.arena {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.arena .column {
+  width: 40%;
+  text-align: center;
+}
+.arena .column .player-title {
+  text-align: center;
+  margin: 15px 0;
+}
+.arena .column .roster {
+  width: 100%;
+  text-align: center;
+}
+.arena .column .roster button {
+  width: 20%;
+  padding: 10px;
+  border-radius: 2%;
+  font-weight: bold;
+}
+.arena .column .hero-header {
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.arena .column .vil-header {
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.arena .column img {
+  margin: 60px 0;
+}
+.arena .column .actionBtns button {
+  width: 45%;
+  padding: 10px;
+  border-radius: 2%;
+  font-weight: bold;
+}
+.arena .column .actionBtns .healBtn button {
+  width: 90%;
+}
+.arena .start {
+  padding: 30px 20px;
+  border-radius: 100%;
+  border: 3px solid #FFD553;
+  background: orange;
+  color: red;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.arena .start:hover {
+  border: 3px solid orange;
+  background: #FFD553;
+  color: red;
+}
+.play-by-play {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  margin: 30px 0 0;
+  background: green;
+  color: white;
+}
+.play-by-play p {
+  font-size: 3rem;
+}
+.main-title {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 5rem;
+  color: #FFD553;
+  font-weight: bold;
+}
+.game-start {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  width: 81%;
+  margin: 0px auto;
+}
+.game-start .one-player {
+  text-decoration: line-through;
+}
+.game-start .player-button {
+  height: 70%;
+  width: 37%;
+  border-radius: 100%;
+  border: 7px solid #FFD553;
+  background: orange;
+  color: red;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.game-start .player-button:hover {
+  border: 7px solid orange;
+  background: #FFD553;
+  color: red;
+}
